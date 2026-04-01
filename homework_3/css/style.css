@@ -1,0 +1,62 @@
+.title {
+    color: yellowgreen;
+}
+
+header p span {
+    color: blue;
+}
+
+h2, h3, h4 {
+    color: brown;
+}
+
+.list .item .link {
+    color: dodgerblue;
+}
+
+.sub-title {
+    color: blueviolet;
+}
+
+.sub-title ~ p {
+    color: darkblue;
+}
+
+.sub-title + p {
+    color: greenyellow;
+}
+
+.sub-title.about + p {
+    color: darkslategray;
+}
+
+.sub-title.cities {
+    color: chocolate;
+}
+
+.sub-title ~ ul {
+    color: crimson;
+}
+
+.sub-title ~ ol {
+    color: deeppink;
+}
+#culture > p {
+    color: forestgreen;
+}
+
+#facts > ul > li { 
+    color: tomato;
+}
+
+#foto {
+    color: aqua;
+}
+
+footer > p {
+    color: indigo;
+}
+
+footer span {
+    color: khaki;
+}
