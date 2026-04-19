@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM%20Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework 3</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">CSS-властивості блоків</h1>
+    </header>
+
+    <main>
+        <h2 class="padding-header">padding</h2>
+        <p class="padding-description">padding - Внутрішній відступ. Відступи (відстань) ВСЕРЕДЕНІ об'єкту. Від кордонів
+            об'єкту ДО ЙОГО КОНТЕНТУ. НЕ успадковується</p>
+
+        <p class="padding-anatomy">Анатомія значення відступів: Цифрове значення + одиниця виміру (10px, 50%... і т.д.).
+            Не може бути від'ємним. При вказанні значення у відсотках відсоток береться від ШИРИНИ батьківського
+            об'єкту, навіть для вертикальних відступів </p>
+
+        <p class="padding-all">padding: з_усіх_сторін;</p>
+        <p class="padding-tb-rl">padding: зверху_знизу зправа_зліва;</p>
+        <p class="padding-t-rl-b">padding: зверху зправа_зліва знизу;</p>
+        <p class="padding-t-r-b-l">padding: зверху зправа знизу зліва; (годинникова стрілка)</p>
+
+        <p class="padding-trbl">padding-top: значення; padding-right: значення; padding-bottom: значення; padding-left:
+            значення;</p>
+
+        <h2 class="margin-header">margin</h2>
+        <p class="margin-description">margin - Зовнішній відступ.
+            Відступи ЗОВНІ об'єкту до інших об'єктів.
+            НЕ успадковується</p>
+
+        <p class="margin-anatomy">Особливості:
+            - Значення можуть бути від'ємними!
+            - Спрацьовує ефект "схлопування"
+            (накладання, колапс, згортання)</p>
+
+        <p class="margin-all">margin: з_усіх_сторін;</p>
+        <p class="margin-tb-rl">margin: зверхуз_низу зправа_зліва;</p>
+        <p class="margin-t-rl-b">margin: зверху зправа_зліва знизу;</p>
+        <p class="margin-t-r-b-l">margin: зверху зправа знизу зліва; (годинникова стрілка)</p>
+
+        <p class="margin-trbl">margin-top: значення; margin-right: значення; margin-bottom: значення; margin-left:
+            значення;</p>
+
+        <p class="margin-collaps-b">Ефект "схлопування"
+            (накладання, колапс, згортання) margin.
+            Виникає коли зовнішній відступ
+            заданий сусіднім об'єктам.</p>
+        <p class="margin-collaps-t">Значення відступу буде дорівнювати
+            найбільшому з 2х значеннь.
+            Відступ margin прийнято задавати з ліва направо
+            та зверху вниз</p>
+
+        <h2 class="width">width</h2>
+        <p class="width-description">width - чітко задає ширину блочного (блочно-рядкового) об'єкту. НЕ працює зі
+            рядковими об'єктами width: значення; auto - (за замовченням) автоматичний розмір. НЕ успадковується</p>
+        <p class="width-max">max-width Встановлює максимальну ширину
+            блочних (блочно-рядкових) тегів Властивість не успадковується. НЕ працює зі рядковими об'єктами</p>
+        <p class="width-min">min-width Встановлює мінімальну ширину блочних (блочно-рядкових) тегів Властивість не
+            успадковується. НЕ працює зі рядковими об'єктами</p>
+
+        <h2 class="height">height</h2>
+        <p class="height-description">height
+            Встановлює чітку висоту блочних (блочно-рядкових) тегів
+            Властивість не успадковується
+            НЕ працює зі рядковими об'єктами</p>
+        <p class="height-max">max-height
+            Встановлює максимальну
+            висоту блочних (блочно-рядкових) тегів
+            Властивість не успадковується
+            НЕ працює зі рядковими об'єктами</p>
+        <p class="height-min">min-height
+            Встановлює мінімальну висоту
+            блочних (блочно-рядкових) тегів
+            Властивість не успадковується
+            НЕ працює зі рядковими об'єктами</p>
+
+        <h2 class="box-sizing">box-sizing</h2>
+        <p class="box-sizing-content">Застосовується для зміни алгоритму обчислення величин. content-box - (за
+            замовченням) додає відступи
+            до розміру об'єкту</p>
+        <p class="box-sizing-border">Застосовується для зміни алгоритму обчислення величин. border-box - значення
+            розмірів враховують відступи</p>
+
+        <h2 class="overflow">overflow</h2>
+        <p class="overflow-description">Керує відображенням контенту блочного елементу. Властивість не успадковується
+        </p>
+        <p class="overflow-visible">visible - (за замовченням) Відображається усесь контент елемента, навіть за межами
+            встановлених розмірівv</p>
+        <p class="overflow-hidden">hidden - Відображається тільки контент всередені елемента</p>
+        <p class="overflow-clip">clip - Майже теж саме що й hidden.</p>
+        <p class="overflow-scroll">scroll - Завжди додаються смужки прокрутки</p>
+        <p class="overflow-auto">auto - Смужки прокрутки додаються лише за необхідністю</p>
+        <p class="overflow-y">Тільки вертикаль overflow-y: ;</p>
+        <p class="overflow-x">Тільки горизонталь overflow-x: ;</p>
+
+        <h2 class="display">display</h2>
+        <p class="display-description">Багатоцільова властивість яка задає
+            глобальні параметри тега. Властивість не успадковується</p>
+        <p class="display-block">block - (за замовченням для блочних об'ектів)
+            <span>Елемент відображається як блочний.</span>
+        </p>
+        <p class="display-inline">inline - (за замовченням для рядкових об'ектів)
+            Елемент відображається як рядковий.</p>
+        <span class="display-inline-block">inline-block - (блочно-рядковий)
+            Елемент відображається як рядковий але з можливістю використання усіх CSS-властивостей.</span>
+        <p class="display-none">none - Елемент не виводиться в браузер.
+            Інші елементи займають його місце. Не приймає участь у обробці браузером.</p>
+
+        <h2 class="block-center">Центрування блоку</h2>
+        <p class="block-center-description">Об'єкт має бути блочним. Об'єкт має мати меньшу ширину за батьківський
+            елемент. Додаємо margin: 0 auto;</p>
+
+        <div class="discover">
+            <div class="discover-arrival">New Arrival</div>
+            <h3 class="discover-header">Discover Our <br> New Collection</h3>
+            <div class="discover-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                    mattis.</p>
+            </div>
+            <a href="#" class="discover-button">BUY Now</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Автор: <span>Ігор</span></p>
+        <p><a href="#top">Повернутися вгору</a></p>
+    </footer>
+</body>
+
+</html>
